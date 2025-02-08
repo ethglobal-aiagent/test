@@ -1,8 +1,8 @@
 def calculator():
-    print("Simple Calculator")
-    num1 = float(input("Enter the first number: "))
-    operator = input("Enter an operator (+, -, *, /): ")
-    num2 = float(input("Enter the second number: "))
+    print("簡単な計算機")
+    num1 = float(input("最初の数字を入力してください: "))
+    operator = input("演算子を入力してください (+, -, *, /): ")
+    num2 = float(input("次の数字を入力してください: "))
     
     if operator == '+':
         result = num1 + num2
@@ -12,14 +12,14 @@ def calculator():
         result = num1 * num2
     elif operator == '/':
         if num2 == 0:
-            print("Cannot divide by zero.")
+            print("ゼロで割ることはできません。")
             return
         result = num1 / num2
     else:
-        print("Invalid operator.")
+        print("無効な演算子です。")
         return
     
-    print(f"Result: {result}")
+    print(f"結果: {result}")
 
 if __name__ == "__main__":
     calculator()
