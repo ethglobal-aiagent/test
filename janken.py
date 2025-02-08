@@ -1,16 +1,16 @@
 import random
 
 def janken():
-    choices = ["グー", "チョキ", "パー"]
-    user = input("グー・チョキ・パーのどれを出しますか？: ")
+    choices = ["Rock", "Paper", "Scissors"]
+    user = input("Rock, Paper, or Scissors? ")
     ai = random.choice(choices)
-    print(f"プレイヤー: {user}, AI: {ai}")
+    print(f"Player: {user}, AI: {ai}")
     if user == ai:
-        print("あいこ")
-    elif (user == "グー" and ai == "チョキ") or (user == "チョキ" and ai == "パー") or (user == "パー" and ai == "グー"):
-        print("あなたの勝ち！")
+        print("It's a tie.")
+    elif (user == "Rock" and ai == "Scissors") or (user == "Scissors" and ai == "Paper") or (user == "Paper" and ai == "Rock"):
+        print("You won!")
     else:
-        print("あなたの負け…")
+        print("You lost...")
 
 if __name__ == "__main__":
     janken()
